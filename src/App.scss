@@ -1,0 +1,53 @@
+@import './sharedStyles/sharedStyles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+a {
+  color: $dark;
+}
+img {
+  width: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Space Mono', monospace;
+}
+body,
+input,
+button {
+  font-family: 'Space Mono', monospace;
+}
+input {
+  text-align: right;
+  font-weight: bold;
+  color: $dark;
+  font-size: 2.4rem;
+}
+
+.App {
+  min-width: 100%;
+  min-height: 100vh;
+  padding-top: 5rem;
+  background-color: $accentLight;
+  margin: 0 auto;
+  gap: 5rem;
+  padding: 2rem;
+}
+input,
+button {
+  border-radius: 0.4rem;
+  border: none;
+  background-color: $veryLight;
+  cursor: pointer;
+  padding: 1rem;
+}
+button {
+  transition: background-color 0.2s, color 0.2s;
+}
