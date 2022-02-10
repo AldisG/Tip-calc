@@ -61,13 +61,11 @@ const CalcForm = () => {
     setTipAmount(0);
     setcustomTipAmount(0);
     setPeopleCount(1);
-
-    console.log('resetAllInputs');
   }, [resetAllInputs]);
 
   return (
     <div className="calc-form">
-      <BillInput bill={convertDigitToStandart} setBill={setBill} />
+      <BillInput bill={bill} setBill={setBill} />
       <div className="tip-selection">
         <span data-testid="current-tip">
           Select Tip <b>{tipAmount || '0'}%</b>
